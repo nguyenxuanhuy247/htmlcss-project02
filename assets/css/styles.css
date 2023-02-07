@@ -29,7 +29,7 @@ a {
     min-width: 118px;
     padding: 12px 10px;
     background: var(--bgc-btn, #171100);
-    border-radius: 25px;
+    border-radius: 9999px;
     font-weight: 600;
     font-size: 1.4rem;
     line-height: 1.86;
@@ -38,7 +38,7 @@ a {
 }
 
 .btn:hover {
-    opacity: 0.9;
+    opacity: 0.8;
 }
 
 /* ====== Fixed header ======= */
@@ -84,7 +84,7 @@ a {
 
 .hero {
     display: flex;
-    background: orange;
+    background: #fffcf4;
 }
 
 .hero .hero-wrap {
@@ -93,6 +93,8 @@ a {
     height: calc(100vh - 98px);
     position: relative;
 }
+
+/* Image block */
 
 .hero .img-block,
 .hero .info {
@@ -108,7 +110,7 @@ a {
 
 .hero .card-courses {
     position: absolute;
-    left: 300px;
+    right: 50%;
     bottom: calc(((100vh - 98px) - 685px) / 2 + 48px);
     width: 270px;
     background: #ffffff;
@@ -148,4 +150,349 @@ a {
     font-size: 1.8rem;
     line-height: 1.67;
     color: #171100;
+}
+
+/* Information */
+
+.hero .info {
+    margin-left: 130px;
+}
+
+.hero .info .title {
+    width: 470px;
+    font-weight: 700;
+    font-size: 5.8rem;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+    color: #171100;
+    font-family: "Sen", sans-serif;
+}
+
+.hero .info .desc {
+    margin-top: 22px;
+    width: 470px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #5f5b53;
+}
+
+.hero .info .btn-block {
+    margin-top: 38px;
+    display: flex;
+    align-items: center;
+}
+
+.hero .btn-block .info-btn {
+    margin-right: 28px;
+    padding: 19px 10px;
+    min-width: 180px;
+    background: #ffb900;
+    font-size: 1.8rem;
+}
+
+.hero .btn-block .play-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 9999px;
+    background: #ffffff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.07);
+    margin-right: 14px;
+}
+
+.hero .btn-block .play-btn:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.hero .play-btn img {
+    width: 12px;
+    height: 12px;
+}
+
+.hero .btn-block span {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #171100;
+}
+
+.hero .info .stat {
+    margin-top: 48px;
+}
+
+.hero .info .row {
+    margin-top: 8px;
+}
+
+.hero .row strong {
+    font-family: "Sen";
+    font-weight: 700;
+    font-size: 4.4rem;
+    line-height: 1.23;
+    color: #171100;
+}
+
+.hero .row span {
+    margin-right: 28px;
+}
+
+.hero .row span {
+    margin-left: 10px;
+}
+
+/* ====== Courses ======= */
+
+.courses {
+    margin-top: 200px;
+}
+
+.courses .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.courses .intro .sub-title {
+    font-family: "Sen", sans-serif;
+    font-weight: 700;
+    font-size: 3.8rem;
+    line-height: 1.26;
+    letter-spacing: -0.02em;
+    color: #171100;
+}
+
+.courses .intro .desc {
+    margin-top: 16px;
+    width: 458px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #5f5b53;
+}
+
+.courses .more a + a {
+    margin-left: 18px;
+}
+
+/* Course List */
+
+.course-list {
+    margin-top: 55px;
+    display: flex;
+    gap: 30px;
+}
+
+.course-list .course-item {
+    flex: 1;
+    background: #ffffff;
+    box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+}
+
+.course-list .image {
+    width: 100%;
+    height: 278px;
+    object-fit: cover;
+    border-radius: 12px 12px 0px 0px;
+}
+
+.course-item .body {
+    padding: 16px 22px 22px;
+}
+
+.course-item .course-name {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #171100;
+}
+
+.course-item .course-desc {
+    margin-top: 6px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #5f5b53;
+}
+
+.course-item .buy {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.course-item .price {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #171100;
+}
+
+.course-item .book-btn {
+    background: #ffb900;
+}
+
+/* ====== Feedback ======= */
+
+.feedback {
+    margin-top: 200px;
+    padding: 96px 0;
+    background: #2e2100;
+}
+
+.feedback-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedback-wrap .customer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.feedback-wrap .customer-info .photo {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+}
+
+.feedback-wrap .customer-info .name {
+    margin-top: 18px;
+    font-family: "Sen", sans-serif;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 1.42;
+    color: #f7f7f7;
+}
+
+.feedback-wrap .customer-info .job {
+    margin-top: 4px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #bfbcb3;
+}
+
+.feedback-wrap .customer-info .tab {
+    margin-top: 28px;
+}
+
+/* Feedback content */
+
+.feedback-content {
+    position: relative;
+}
+
+.feedback-content img {
+    position: absolute;
+    left: -30px;
+}
+
+.feedback-content .quote {
+    margin-top: 28px;
+    width: 740px;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 2.6rem;
+    line-height: 1.54;
+    color: #ffffff;
+}
+
+/* ====== Call to action ======= */
+
+.cta {
+    margin-top: 200px;
+}
+
+.cta .row-top {
+    display: flex;
+}
+
+.cta .img-block {
+    width: 49%;
+    display: flex;
+    gap: 30px;
+    position: relative;
+}
+
+.cta .img-block img:first-child {
+    margin-top: 33px;
+}
+
+.cta .img-block img {
+    width: 270px;
+    height: 404px;
+    border-radius: 16px;
+}
+
+.cta .outcome {
+    padding: 58px 0 0 130px;
+}
+
+.cta .outcome .sub-title {
+    font-family: "Sen", sans-serif;
+    font-weight: 700;
+    font-size: 3.8rem;
+    line-height: 1.26;
+    letter-spacing: -0.02em;
+    color: #171100;
+}
+
+.cta .outcome .desc {
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #5f5b53;
+}
+
+.cta-btn {
+    margin-top: 32px;
+    min-width: 137px;
+    padding: 12px 12px;
+    background: #ffb900;
+}
+
+/* Call to buy */
+
+.cta .row-bottom {
+    margin-top: 200px;
+}
+
+.cta .call-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cta .call-content {
+    margin-top: 71px;
+    width: 570px;
+}
+
+.call-content .sub-title {
+    font-family: "Sen";
+    font-weight: 700;
+    font-size: 3.8rem;
+    line-height: 1.26;
+    letter-spacing: -0.02em;
+    color: #171100;
+}
+
+.call-content .desc {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #5f5b53;
+} 
+
+.call-wrap .image {
+    width: 470px;
+    height: 440px;
+    object-fit: cover;
+    border-radius: 20px;
 }
