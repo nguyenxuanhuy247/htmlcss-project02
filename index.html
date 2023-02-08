@@ -9,11 +9,11 @@
         <link rel="stylesheet" href="./assets/css/reset.css" />
         <!-- Font Poppins -->
         <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
-        <!-- Font Sen -->
+        <!-- Embed fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Sen:wght@700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Sen:wght@700&display=swap"
             rel="stylesheet"
         />
         <!-- Styles -->
@@ -21,82 +21,93 @@
     </head>
     <body>
         <main>
-            <!-- Fixed header -->
-            <header class="fixed-header">
-                <div class="content">
-                    <div class="navbar">
-                        <a href="#"><img src="./assets/img/logo.svg" alt="Lesson" /></a>
-                        <ul>
-                            <li>
-                                <a href="#">Home</a>
-                            </li>
-                            <li>
-                                <a href="#Courses">Courses</a>
-                            </li>
-                            <li>
-                                <a href="#pricing">Pricing</a>
-                            </li>
-                            <li>
-                                <a href="#reviews">Reviews</a>
-                            </li>
-                        </ul>
-                        <a href="#!" class="btn btn-link">Sign up</a>
+            <!-- Header -->
+            <header class="header fixed">
+                <div class="main-content">
+                    <div class="body">
+                        <!-- Logo -->
+                        <a href="#"
+                            ><img src="./assets/img/logo.svg" alt="Lesson"
+                        /></a>
+                        <!-- Navigation -->
+                        <nav class="nav">
+                            <ul>
+                                <li class="active">
+                                    <a href="#!">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Courses</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Pricing</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Reviews</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!-- Action -->
+                        <div class="action">
+                            <a href="#!" class="btn sign-up-btn">Sign Up</a>
+                        </div>
                     </div>
                 </div>
             </header>
 
-            <!-- Hero wrap -->
+            <!-- Hero -->
             <div class="hero">
-                <div class="content">
-                    <div class="hero-wrap">
-                        <!-- Image block -->
-                        <div class="img-block">
+                <div class="main-content">
+                    <div class="body">
+                        <!-- Hero left -->
+                        <div class="media-block">
                             <img
                                 src="./assets/img/hero-img.jpg"
                                 alt="Learn without limits and spread knowledge."
-                                class="image"
+                                class="img"
                             />
-                            <div class="card-courses">
-                                <div class="body">
-                                    <div class="course-block">
+                            <div class="hero-summary">
+                                <div class="item">
+                                    <div class="icon">
                                         <img
-                                            src="./assets/img/uxuidesign.svg"
+                                            src="./assets/img/list.svg"
                                             alt="UI/UX Design"
-                                            class="icon"
                                         />
-                                        <div>
-                                            <span>20 Courses</span>
-                                            <strong>UI/UX Design</strong>
-                                        </div>
                                     </div>
-                                    <div class="course-block">
+                                    <div class="info">
+                                        <p class="label">20 Courses</p>
+                                        <p class="title">UI/UX Design</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="icon">
                                         <img
-                                            src="./assets/img/development.svg"
+                                            src="./assets/img/code.svg"
                                             alt="Development"
-                                            class="icon"
                                         />
-                                        <div>
-                                            <span>20 Courses</span>
-                                            <strong>Development</strong>
-                                        </div>
                                     </div>
-                                    <div class="course-block">
+                                    <div>
+                                        <p class="label">20 Courses</p>
+                                        <p class="title">Development</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="icon">
                                         <img
-                                            src="./assets/img/marketing.svg"
+                                            src="./assets/img/speaker.svg"
                                             alt="Marketing"
-                                            class="icon"
                                         />
-                                        <div>
-                                            <span>30 Courses</span>
-                                            <strong>Marketing</strong>
-                                        </div>
+                                    </div>
+                                    <div>
+                                        <p class="label">30 Courses</p>
+                                        <p class="title">Marketing</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- Information -->
-                        <div class="info">
-                            <h1 class="title">
+
+                        <!-- Hero right -->
+                        <div class="content-block">
+                            <h1 class="heading">
                                 Learn without limits and spread knowledge.
                             </h1>
                             <p class="desc">
@@ -104,24 +115,24 @@
                                 feeling with courses, certificates, and degrees
                                 from world-class universities and companies.
                             </p>
-                            <!-- Button block -->
-                            <div class="btn-block">
-                                <a href="#!" class="btn info-btn"
+                            <div class="cta-group">
+                                <a href="#!" class="btn hero-cta"
                                     >See Courses</a
                                 >
-                                <a href="#!" class="play-btn"
-                                    ><img
-                                        src="./assets/img/play-btn.svg"
-                                        alt="Watch Video"
-                                /></a>
-                                <span>Watch Video</span>
+                                <button class="watch-video">
+                                    <div class="icon">
+                                        <img
+                                            src="./assets/img/play.svg"
+                                            alt="Watch video"
+                                        />
+                                    </div>
+                                    <span>Watch Video</span>
+                                </button>
                             </div>
-                            <p class="stat desc">Recent engagement</p>
-                            <p class="row">
-                                <strong>50K</strong>
-                                <span class="desc">Students</span>
-                                <strong>70+</strong>
-                                <span class="desc">Courses</span>
+                            <p class="desc">Recent engagement</p>
+                            <p class="row stats">
+                                <strong>50K</strong>Students
+                                <strong>70+</strong>Courses
                             </p>
                         </div>
                     </div>
@@ -166,7 +177,9 @@
                                 />
                             </a>
                             <div class="body">
-                                <h3 class="course-name line-clamp"><a href="#!">Basic web design</a></h3>
+                                <h3 class="course-name line-clamp">
+                                    <a href="#!">Basic web design</a>
+                                </h3>
                                 <div class="course-desc line-clamp">
                                     Get the best course, gain knowledge and
                                     shine for your future career.
@@ -190,7 +203,9 @@
                                 />
                             </a>
                             <div class="body">
-                                <h3 class="course-name line-clamp"><a href="#!">UI/UX design</a></h3>
+                                <h3 class="course-name line-clamp">
+                                    <a href="#!">UI/UX design</a>
+                                </h3>
                                 <div class="course-desc line-clamp">
                                     Get the best course, gain knowledge and
                                     shine for your future career.
@@ -212,7 +227,9 @@
                                 />
                             </a>
                             <div class="body">
-                                <h3 class="course-name line-clamp"><a href="#!">Web App design</a></h3>
+                                <h3 class="course-name line-clamp">
+                                    <a href="#!">Web App design</a>
+                                </h3>
                                 <div class="course-desc line-clamp">
                                     Get the best course, gain knowledge and
                                     shine for your future career.
