@@ -135,7 +135,6 @@ a {
 
 .header .sign-up-btn {
     min-width: 144px;
-    /* margin-left: 49px; */
 }
 
 .header .action {
@@ -686,105 +685,77 @@ a {
 /* ====== Footer ======= */
 
 .footer {
-    padding: 96px 0 28px;
+    padding-top: 96px;
     background: #2e2100;
 }
 
-.footer .row-top {
+.footer .row {
     display: flex;
-    gap: 130px;
+    padding-bottom: 38px;
+    border-bottom: 1px solid #59554b;
+}
+
+.footer .row .column {
+    width: 21.6%;
 }
 
 .footer .column:first-child {
-    margin-right: 15px;
+    width: 35%;
 }
 
 .footer .column:first-child .desc {
     margin-top: 18px;
-    font-weight: 400;
+    max-width: 267px;
     font-size: 1.4rem;
     line-height: 1.86;
     color: #bfbcb2;
 }
 
-.footer .social-link {
+.footer .socials {
     margin-top: 18px;
     display: flex;
-}
-
-.footer .social-link a + a {
-    margin-left: 18px;
-}
-
-.footer .social-link .icon:hover {
-    opacity: 0.6;
+    gap: 18px;
 }
 
 /* Column */
 
-.footer .row-top h3 {
+.footer .title {
+    display: inline-block;
+    padding: 0 48px 14px 0;
+    border-bottom: 1px solid #59554b;
     font-weight: 600;
     font-size: 1.6rem;
     line-height: 1.75;
     color: #ffffff;
 }
 
-.footer .row-top .separate {
-    margin-top: 14px;
-    width: 130px;
-    height: 1px;
-    background: #59554b;
-}
-
-.footer .column ul {
+.footer .list {
     margin-top: 28px;
 }
 
-.footer .column ul li + li {
-    margin-top: 12px;
-}
-
-.footer ul a {
-    font-weight: 400;
+.footer .list a {
+    display: inline-block;
+    margin-bottom: 12px;
     font-size: 1.4rem;
     line-height: 1.86;
     color: #bfbcb2;
-    white-space: nowrap;
 }
 
-.footer .column:last-child a {
-    display: inline-block;
-    width: 231px;
-    white-space: normal;
+.footer .list li:last-child a {
+    margin-bottom: 0;
 }
 
-.footer .column:last-child b {
+.footer .list strong {
     font-weight: 600;
-    color: #ffffff;
-}
-
-/* Separate */
-
-.footer .separate {
-    margin-top: 38px;
-    width: 1170px;
-    height: 1px;
-    background: #59554b;
+    white-space: nowrap;
 }
 
 /* Copyright */
 
 .copyright {
-    margin-top: 28px;
-    font-weight: 400;
+    padding: 28px 0;
     font-size: 1.4rem;
     line-height: 1.86;
     text-align: center;
     color: #807d74;
-}
-
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
